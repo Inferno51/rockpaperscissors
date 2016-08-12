@@ -7,14 +7,16 @@ public class Validation {
 	       try {
 
 	           int isValid = Integer.parseInt(numChosen);
-	           if ((isValid < 0) || (isValid > 11)) {
-	               return true;
+	           if ((isValid < 0) || (isValid > 3)) {
+	               System.out.println("You did not enter a number between 1 and 3. Please try again!");
+	        	   return true;
 	           }
+	           
 	           return false;
 	       }
 
 	       catch (NumberFormatException e) {
-	           return true;
+	    	   return true;
 	       }
 
 	   }

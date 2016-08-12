@@ -3,15 +3,9 @@ package com.roshambo;
 import java.util.Scanner;
 
 import com.rockpaperscissors.Opponent1;
-import com.rockpaperscissors.Opponent10;
 import com.rockpaperscissors.Opponent2;
 import com.rockpaperscissors.Opponent3;
-import com.rockpaperscissors.Opponent4;
-import com.rockpaperscissors.Opponent5;
-import com.rockpaperscissors.Opponent6;
-import com.rockpaperscissors.Opponent7;
-import com.rockpaperscissors.Opponent8;
-import com.rockpaperscissors.Opponent9;
+
 import com.validation.Validation;
 
 public class Arena {
@@ -44,13 +38,7 @@ public class Arena {
 		Opponent1 opp1 = new Opponent1();
 		Opponent2 opp2 = new Opponent2();
 		Opponent3 opp3 = new Opponent3();
-		Opponent4 opp4 = new Opponent4();
-		Opponent5 opp5 = new Opponent5();
-		Opponent6 opp6 = new Opponent6();
-		Opponent7 opp7 = new Opponent7();
-		Opponent8 opp8 = new Opponent8();
-		Opponent9 opp9 = new Opponent9();
-		Opponent10 opp10 = new Opponent10();
+		
 		
 		
 		
@@ -59,7 +47,7 @@ public class Arena {
 
 		do {
 			
-			System.out.println("Hello " + userName + "! Please choose your opponent: (1-10)");
+			System.out.println("Hello " + userName + "! Please choose your opponent: (1-3)");
 			String numChosen = sc.nextLine();
 			
 			opponentChoice = Integer.parseInt(numChosen);
@@ -86,27 +74,6 @@ public class Arena {
 
 		} else if (opponentChoice == 3) {
 			opponentThrow = opp3.handy();
-
-		} else if (opponentChoice == 4) {
-			opponentThrow = opp4.handy();
-
-		} else if (opponentChoice == 5) {
-			opponentThrow = opp5.handy();
-
-		} else if (opponentChoice == 6) {
-			opponentThrow = opp6.handy();
-
-		} else if (opponentChoice == 7) {
-			opponentThrow = opp7.handy();
-
-		} else if (opponentChoice == 8) {
-			opponentThrow = opp8.handy();
-
-		} else if (opponentChoice == 9) {
-			opponentThrow = opp9.handy();
-
-		} else if (opponentChoice == 10) {
-			opponentThrow = opp10.handy();
 
 		}
 		
